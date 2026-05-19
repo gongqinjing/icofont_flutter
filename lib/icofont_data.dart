@@ -2,14 +2,18 @@ library icofont_flutter;
 
 import 'package:flutter/widgets.dart';
 
-class IcoFontData {
-  final int codePoint;
+class IcoFontData extends IconData {
 
-  const IcoFontData(this.codePoint);
+const IcoFontData(int codePoint)
 
-  IconData get icon => IconData(
-        codePoint,
-        fontFamily: 'IcoFont',
-        fontPackage: 'icofont_flutter',
-      );
+: super(
+
+codePoint,
+
+fontFamily: 'IcoFont',
+
+fontPackage: 'icofont_flutter',
+
+);
+
 }
